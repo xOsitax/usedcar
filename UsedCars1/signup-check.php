@@ -11,7 +11,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 	   $data = htmlspecialchars($data);
 	   return $data;
 	}
-#p
+#prevent SQL injection
 	$uname = mysqli_real_escape_string($conn,$_POST['uname']);
 	$pass = mysqli_real_escape_string($conn,$_POST['password']);
 
