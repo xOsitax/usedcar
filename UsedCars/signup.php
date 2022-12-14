@@ -4,7 +4,7 @@
 	<title>SIGN UP</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="body1">
      <form action="signup-check.php" method="post">
      	<h2>SIGN UP</h2>
      	<?php if (isset($_GET['error'])) { ?>

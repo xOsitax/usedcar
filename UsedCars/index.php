@@ -4,7 +4,7 @@
 	<title>LOGIN</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="body1">
 	
      <form action="login.php" method="post">
      	<h2>LOGIN</h2>
@@ -20,5 +20,5 @@
      	<button type="submit">Login</button>
           <a href="signup.php" class="ca">Create an account</a>
      </form>
-</body>
+</body >
 </html>

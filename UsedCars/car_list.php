@@ -8,12 +8,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['FullName'])) {
  ?>
 <?php
 include "header.php";
-include "footer.php";
+
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-   
+
+
     <script src="script.js"></script>
 
     <link
@@ -23,34 +26,40 @@ include "footer.php";
     <script src="store.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="style.css">
   
   </head>
+  <body>
    <!-- Store Section Start-->
    <section class="container content-section">
       <h1>Used Cars</h1>
       <div class="shop-items">
         <div class="shop-item">
           <span class="shop-item-title">Honda</span>
+          <br>
           <img
             class="shop-item-image"
-            src="Images/store-images/dell-laptop.png"
+            src="images/honda.jpg"
           />
           <div class="shop-item-details">
             <span class="shop-item-price">$10200</span>
+            <br>
             <button class="btn btn-primary shop-item-button" type="button">
               ADD TO CART
             </button>
           </div>
         </div>
         <div class="shop-item">
-          <span class="shop-item-title">Nissan 1 </span>
+          <span class="shop-item-title">Nissan</span>
+          <br>
           <img
             class="shop-item-image"
-            src="Images/laptop-2.png"
+            src="images/nissan.jpg"
           />
           <div class="shop-item-details">
+       
             <span class="shop-item-price">$9500</span>
+            <br>
             <button class="btn btn-primary shop-item-button" type="button">
               ADD TO CART
             </button>
@@ -58,12 +67,14 @@ include "footer.php";
         </div>
         <div class="shop-item">
           <span class="shop-item-title">Toyota</span>
+          <br>
           <img
             class="shop-item-image"
-            src="Images/store-images/mobile-2.png"
+            src="images/toyota.jpg"
           />
           <div class="shop-item-details">
             <span class="shop-item-price">$9200</span>
+            <br>
             <button class="btn btn-primary shop-item-button" type="button">
               ADD TO CART
             </button>
@@ -104,7 +115,7 @@ include "footer.php";
     </section>
 
 
-  </body>
+  </body1>
 
 </html>
 
@@ -113,4 +124,8 @@ include "footer.php";
      header("Location: index.php");
      exit();
 }
+
+ ?>
+ <?php
+ include "footer.php";
  ?>
